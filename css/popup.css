@@ -1,0 +1,206 @@
+article * {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+#myForm {
+  -webkit-animation: popup .5s;
+          animation: popup .5s;
+}
+
+@-webkit-keyframes popup {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes popup {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* The popup form - hidden by default */
+/* The Modal (background) */
+.form-popup {
+  display: none;
+  /* Hidden by default */
+  position: fixed;
+  /* Stay in place */
+  z-index: 100000;
+  /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%;
+  /* Full width */
+  height: 100%;
+  /* Full height */
+  border: 3px solid #f1f1f1;
+  overflow: auto;
+  /* Enable scroll if needed */
+  background-color: black;
+  /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4);
+  /* Black w/ opacity */
+}
+
+/* Add styles to the form container */
+.form-container {
+  max-width: 800px;
+  scroll-behavior: auto;
+  margin: 0 auto;
+}
+
+/* Modal Content/Box */
+.form-elements {
+  background-color: #fefefe;
+  margin: 3% auto;
+  /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  width: auto;
+  min-width: 300px;
+  border-radius: 0.5rem;
+  position: relative;
+}
+
+.form-elements h1 {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.form-elements > label {
+  text-align: left;
+  padding-left: 1rem;
+  text-transform: uppercase;
+}
+
+@media (max-width: 760px) {
+  .form-elements label {
+    padding-left: 0;
+  }
+}
+
+/* Full-width input fields */
+.form-container input {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #f1f1f1;
+}
+
+/* text area */
+.form-container textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 5px 0 0 0;
+  height: 100%;
+  resize: none;
+}
+
+/* When the inputs get focus, do something */
+.form-container input[type=text]:focus, .form-container input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Set a style for the submit/login button */
+.form-container .btn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom: 10px;
+  opacity: 0.8;
+}
+
+/* Add some hover effects to buttons */
+.form-container .btn:hover, .open-button:hover {
+  opacity: 1;
+}
+
+/* The Close Button */
+.off {
+  position: absolute;
+  top: 0;
+  right: 5px;
+  font-size: 35px;
+}
+
+.off:hover,
+.off:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+#checkbox {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding: 15px;
+  padding-left: 0px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #f1f1f1;
+}
+
+#checkbox textarea {
+  margin-left: 15px;
+}
+
+#checkbox input {
+  width: auto;
+  margin-left: 1rem;
+}
+
+#checkbox label {
+  padding-left: 0;
+}
+
+/* thank you message */
+.thankyou_message {
+  background-color: #fefefe;
+  margin: 15% auto;
+  /* 15% from the top and centered */
+  border: 1px solid #1d4867;
+  width: auto;
+  min-width: 316px;
+  border-radius: 0.5rem;
+  -webkit-animation: popup .2s;
+          animation: popup .2s;
+  padding: 20px;
+}
+
+.thankyou_message h2 {
+  color: #1d4867;
+  padding: 2rem 0;
+}
+
+.thankyou_message .done_icon {
+  font-size: 4rem;
+  color: #28a745;
+}
+
+.thankyou_message .success_close {
+  width: auto;
+  padding: 12px 20px;
+}
+
+@media (max-width: 766px) {
+  .thankyou_message h2 {
+    font-size: 1.5rem;
+  }
+}
+/*# sourceMappingURL=popup.css.map */
