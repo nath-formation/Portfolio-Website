@@ -11023,7 +11023,7 @@ a.text-dark:hover, a.text-dark:focus {
   left: 0;
   -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
-  background-color: rgba(73, 236, 68, 0.9);
+  background-color: rgba(149, 193, 31, 0.9);
 }
 
 .portfolio .portfolio-item:hover .portfolio-item-caption {
@@ -11036,23 +11036,40 @@ a.text-dark:hover, a.text-dark:focus {
   font-weight: bold;
 }
 
+.portfolio .portfolio-item .na {
+  top: 0;
+  height: 200%  !important;
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(50%, rgba(199, 201, 202, 0.8)), color-stop(50%, rgba(126, 130, 118, 0.8)));
+  background-image: linear-gradient(to bottom, rgba(199, 201, 202, 0.8) 50%, rgba(126, 130, 118, 0.8) 50%);
+  background-color: transparent;
+}
+
+.portfolio .portfolio-item .na:hover {
+  top: -100%;
+}
+
 .portfolio .portfolio-item .na .portfolio-item-caption-content {
-  color: black;
-  width: 100%;
+  top: 0;
+}
+
+.portfolio .portfolio-item .na .portfolio-item-caption-content div:first-child {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 35%;
   font-size: 1.7rem;
   text-shadow: 1px 1px 1px black;
   font-weight: normal;
-  position: absolute;
-  bottom: 1rem;
 }
 
-.portfolio .portfolio-item .na {
+.portfolio .portfolio-item .na .portfolio-item-caption-content div:last-child {
   position: absolute;
-  top: 0;
   left: 0;
-  -webkit-transition: none;
-  transition: none;
-  background-color: rgba(199, 201, 202, 0.8);
+  right: 0;
+  bottom: 17%;
+  font-size: 2.5rem;
+  text-shadow: 2px 2px 1px #5a5858;
+  font-weight: bold;
 }
 
 .portfolio-modal .portfolio-modal-title {

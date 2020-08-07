@@ -7387,7 +7387,7 @@ h3 {
   top: 100%;
   left: 0;
   transition: all 0.5s ease-in-out;
-  background-color: rgba(73, 236, 68, 0.9); }
+  background-color: rgba(149, 193, 31, 0.9); }
 
 .portfolio .portfolio-item:hover {
   .portfolio-item-caption {
@@ -7401,25 +7401,25 @@ h3 {
   font-weight: bold;
 }
 
-.portfolio .portfolio-item .na .portfolio-item-caption-content {
-  color: black;
-  width: 100%;
-  font-size: 1.7rem; 
-  text-shadow: 1px 1px 1px black;
-  font-weight: normal;
-  position: absolute;
-  bottom: 1rem;
-  // left: 50%;
-  // transform: translateX(-50%);
+.portfolio .portfolio-item {
+  .na {
+    top: 0;
+    height: 200%  !important;
+    background-image: linear-gradient(to bottom,  rgba(199, 201, 202, 0.8) 50% , rgba(126, 130, 118, 0.8) 50%);
+    background-color: transparent;
+
+    &:hover {
+      top: -100%; 
+    }
+
+    .portfolio-item-caption-content { 
+      top: 0;
+      // caption texts
+      div:first-child { position: absolute; left: 0; right: 0; top: 35%; font-size: 1.7rem; text-shadow: 1px 1px 1px black; font-weight: normal;}
+      div:last-child { position: absolute; left: 0; right: 0; bottom: 17%; font-size: 2.5rem; text-shadow: 2px 2px 1px rgb(90, 88, 88); font-weight: bold;}
+    }
+  }
 }
-
-.portfolio .portfolio-item .na {
-  position: absolute;
-  top: 0;
-  left: 0;
-  transition: none;
-  background-color: rgba(199, 201, 202, 0.8); }
-
 
 .portfolio-modal .portfolio-modal-title {
   font-size: 2.25rem;
