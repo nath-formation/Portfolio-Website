@@ -11146,6 +11146,7 @@ form .row:first-child .floating-label-form-group {
 }
 
 .footer {
+  position: relative;
   padding-top: 5rem;
   padding-bottom: 5rem;
   background-color: #95c11f;
@@ -11259,6 +11260,7 @@ form .row:first-child .floating-label-form-group {
   width: 30px;
   border: 1.6px solid #80808061;
   border-radius: 10px;
+  background: #80808061;
 }
 
 #testimonial .card .card-body p {
@@ -11289,5 +11291,13 @@ form .row:first-child .floating-label-form-group {
   width: 40px;
   border: 3px solid rgba(149, 193, 31, 0.8);
   border-radius: 10px;
+  background: rgba(149, 193, 31, 0.8);
+}
+
+.NDD {
+  background-color: #95c11f;
+  font-size: 1.2rem;
+  margin-bottom: 0;
+  padding-bottom: .3rem;
 }
 /*# sourceMappingURL=styles.css.map */
