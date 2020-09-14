@@ -7485,6 +7485,7 @@ form .row:first-child .floating-label-form-group {
   border-top: 1px solid #e9ecef; }
 
 .footer {
+  position: relative;
   padding-top: 5rem;
   padding-bottom: 5rem;
   background-color: #95c11f;
@@ -7552,7 +7553,7 @@ form .row:first-child .floating-label-form-group {
   .card {  border-radius: 3px; border: none; box-shadow: 3px 4px 16px -4px #6c757d5e;
     .card-body {    
       h4 { color: #767789;}
-      hr { width: 30px; border: 1.6px solid #80808061; border-radius: 10px;}
+      hr { width: 30px; border: 1.6px solid #80808061; border-radius: 10px; background: #80808061;}
       p { font-size: 1.2rem; color: rgb(56, 56, 56); font-style: italic;}
     }
   }
@@ -7574,5 +7575,8 @@ form .row:first-child .floating-label-form-group {
 }
 
 #contact { 
-  hr { width: 40px; border: 3px solid rgba(149, 193, 31, 0.8); border-radius: 10px;}
+  hr { width: 40px; border: 3px solid rgba(149, 193, 31, 0.8); border-radius: 10px; background: rgba(149, 193, 31, 0.8);}
 }
+
+.NDD { 
+  background-color: #95c11f; font-size: 1.2rem; margin-bottom: 0; padding-bottom: .3rem;}
